@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Page</title>
+<style>
+    header {
+        background-color: #5b2727;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+    header:hover{background-color: chocolate;}
+    h1{
+        font-size:70px;
+        transition: font-size 0.4s ease;
+    }
+    header:hover{
+        font-size: 80px;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+        transition: background-color 0.3s ease;
+    }
+    body:hover{background-color: rgb(141, 144, 201);}
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 20px auto;
+        max-width: 1200px;
+    }
+
+    .box {
+        width: calc(33.33% - 20px); /* Adjust width to fit the container */
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+    }
+
+    /* Circular profile image */
+    .box.image {
+        width: 100%; /* Set width to 100% for profile box */
+        text-align: left;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative; /* Add position relative for absolute positioning of small box */
+    }
+
+    .box.image img {
+        border-radius: 60%;
+        max-width: 300px; /* Increase the size of the image */
+        height: auto;
+        margin-right: 40px; /* Add a larger margin to create a gap */
+        transition: transform 0.3s ease; /* Smooth transition for image size */
+    }
+
+    .personal-info {
+        flex-grow: 1;
+    }
+
+    .name {
+        font-size: 50px; /* Larger font size for the name */
+    }
+
+    .small-box {
+        position:middle;
+        top: 0;
+        right: 0;
+        width: 350px;
+        height: 230px;
+        background-color: #4b4747; /* Adjust as needed */
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .image { background-color: #ccffff; }
+    .academics { background-color: #ccffcc; }
+    .skills { background-color: #ccccff; }
+    .hobbies { background-color: #ffffcc; }
+    .contact { background-color: #ffccff; }
+    .small-box{background-color: #6ff0f0;}
+    /* Color changing effect on hover */
+    .image:hover { background-color: #a8f716; }
+    .academics:hover { background-color: #6086f7; }
+    .skills:hover { background-color: #ebbc47; }
+    .hobbies:hover { background-color: #32bcf2; }
+    .contact:hover { background-color: #e48c12; }
+    .small-box:hover{background-color: #9af39a;}
+    .box:hover img {
+        transform: scale(1.1); /* Enlarge image on hover */
+    }
+
+    h2 {
+        font-size: 24px;
+        transition: font-size 0.3s ease; /* Smooth transition for font size */
+    }
+
+    .box:hover h2 {
+        font-size: 28px; /* Increase font size on hover */
+    }
+</style>
+</head>
+<header>
+    <h1 style="font: size 200%;">My Profile</h1>
+</header>
+<body>
+
+<div class="container">
+    <div class="box image">
+        <img src="nick1.jpg" alt="Profile Image">
+        <div class="personal-info">
+            <h2 style="font-size: 47px;" class="name">Nikhil Chauhan</h2>
+            <p>Age: 19  and      D.O.B = 25<sup>th</sup> May 2004   </p>
+            <p>Location: Dehradun, Uttarakhand, India</p>
+            <p>Father's Name: Mr. Matbar Singh</p>
+            <p>Mother's Name: Mrs. Geeta Devi</p>
+            <p>My Profession: IT Engineer</p>
+        </div>
+        <!-- Small box inside the first long box -->
+        <div class="small-box">
+            <h2>My Acheivements</h2>
+            <p>Participate in state lavel science competition</p>
+            <p>EMRS Alum</p>
+            <p>Dakshana Alum</p>
+            <p>JEE Qaulified</p>
+            <p>Engineering student at IIIT Allahabad</p>
+        </div>
+    </div>
+    
+    <div class="box academics">
+        <h2>Academics</h2>
+        <p>Basic Education (Till 12th grade): EMRS Kalsi, Dehradun</p>
+        <p>Percentage: 10th=94%, 12th=86%</p>
+        <p>Degree: Bachelor of Technology</p>
+        <p>Major: Information Technology</p>
+        <p>Institute: Indian Institute of Information Technology, Allahabad</p>
+    </div>
+    
+    <div class="box skills">
+        <h2>Skills</h2>
+        <p>Programming Languages: HTML, CSS, JavaScript, C++, C, Java, Python</p>
+        <p>Leadership Skill: I have confidence that I can become a good leader because I have been a leader many times.</p>
+        <p>Other Skills: Graphic Design, UI/UX Design</p>
+        <p>Management Skill: I can manage things perfectly. I have very good management experience.</p>
+
+    </div>
+    
+    <div class="box hobbies">
+        <h2>Hobbies</h2>
+        <p>Reading Novels</p>
+        <p>Playing cricket, Volleyball</p>
+        <p>Exploring the Internet</p>
+        <p>Exploring and learning about new technologies</p>
+    </div>
+    <div class="box contact">
+        <h2>Contact Information</h2>
+        <p>Address: Vill. Birpa, Chakrata, Dehradun, Uttarakhand</p>
+        <p>Institute: IIIT Allahabad</p>
+        <p>Phone. No.: 9389606673</p>
+        <p><a href="mailto:nc4494542@gmail.com">Send email to Me</a></p>
+    </div>
+</div>
+
+</body>
+</html>
